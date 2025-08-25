@@ -21,12 +21,12 @@ if(process.env.NODE_ENV === "production") {
   });
 }
 
-const port = 5000;
+
 
 connectDB()   // connect before starting server
   .then(() => {
-    app.listen(port, () => {
-      console.log(`✅ Server started at http://localhost:${port}`);
+    app.listen(5000, () => {
+      console.log("Server started at: http://localhost:5000");
     });
   })
   .catch((err) => {
